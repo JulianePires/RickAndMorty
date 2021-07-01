@@ -3,7 +3,7 @@
 
 &#xa0;
 
-  <!-- <a href="https://RickAndMorty.netlify.com">Demo</a> -->
+  <a href="https://rick-and-morty-m1xap0j5m-julianepires.vercel.app/">Demo</a>
 </div>
 
 <h1 align="center">RickAndMorty</h1>
