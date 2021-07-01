@@ -1,0 +1,109 @@
+.card-list
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 1rem 3rem 1rem
+
+    .card-list__search-group
+        width: 100%
+        hight: auto
+        margin-bottom: 2rem
+        display: flex
+        align-items: center
+
+        .card-list__search-group__search-box
+            width: 22rem
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            margin: 0.5rem 0
+
+            .card-list__search-group__search-box__search-icon
+                color: var(--main)
+                margin-left: 0.5rem
+                margin-right: 0.2rem
+
+            .card-list__search-group__search-box__input
+                border: 2px solid var(--dark)
+                border-radius: 8px
+                background: var(--yellow)
+                padding: 0.5rem
+                ::placeholder
+                    color: var(--light)
+
+    .card-list__cards
+        width: 100%
+        height: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+
+        .card-list__cards__card
+            max-width: 24rem
+            width: 100%
+            margin: 1rem
+            border-radius: 8px
+            padding: 1rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            text-align: center
+            background: var(--dark)
+            color: var(--secondary)
+
+            .card-list__cards__card__inside-circle
+                width: 20rem
+                height: 20rem
+                background: var(--main)
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                &:hover
+                    background: var(--yellow)
+
+                .card-list__cards__card__inside-circle__image
+                    width: 18rem
+                    border-radius: 50%
+
+            .card-list__cards__card__card-header
+                margin: 1rem 0 0 0
+                h2
+                    font-weight: 700
+
+            .card-list__cards__card__card-content
+                h2
+                    margin: 1rem
+
+                .card-list__cards__card__card-button
+                    font-size: 1.2rem
+                    font-weight: 700
+                    &:hover
+                        color: var(--yellow)
+
+        .card-list__cards__card--purple
+            background: var(--secondary)
+            color: var(--light)
+
+    .card-list__button-group
+        width: 20rem
+        margin-top: 2rem
+        display: flex
+        justify-content: space-between
+
+        button
+            width: 8rem
+            height: 2rem
+            background: var(--main)
+            color: var(--gray)
+            border: 1px solid var(--light)
+            transition: filter 2s easy-in-out
+
+            &:hover
+                filter: opacity(1.2)
+
+@media (max-width: 1248px)
+    .card-list__search-group
+        flex-wrap: wrap

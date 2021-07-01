@@ -1,0 +1,28 @@
+.character-page
+    width: 100%
+    min-height: 100vh
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    flex-wrap: wrap
+
+    .character-page__image
+        width: 20rem
+        margin: 0 2rem
+
+    .character-page__back-button
+        position: absolute
+        top: 2rem
+        left: 2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 6rem
+        height: 2rem
+        background: var(--main)
+        color: var(--gray)
+        border: 1px solid var(--light)
+        transition: filter 2s easy-in-out
+
+        &:hover
+            filter: opacity(1.2)

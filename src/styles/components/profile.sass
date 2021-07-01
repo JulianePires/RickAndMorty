@@ -1,0 +1,63 @@
+.character-page__character
+    margin: 2rem auto
+    max-width: 30rem
+    width: 100%
+    height: auto
+    padding: 1rem
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    flex-wrap: wrap
+    background: var(--gray)
+    border: 2px solid var(--main)
+    border-radius: 8px
+
+    .character-page__character__inside-circle
+        background: var(--light)
+        border-radius: 50%
+        width: 18rem
+        height: 18rem
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 1rem
+
+        .character-page__character__inside-circle__image
+            width: 15rem
+            border-radius: 50%
+            transition: filter 2s easy-in-out
+            &:hover
+                filter: opacity(1.2)
+
+    .character-page__character__character-content
+        height: 10rem
+        margin: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+
+        h2
+            margin: 0.5rem 0
+            color: var(--main)
+            transition: filter 2s easy-in-out
+            &:hover
+                filter: opacity(1.2)
+
+        h3
+            font-size: 1rem
+
+        strong
+            color: var(--dark)
+            transition: filter 2s easy-in-out
+            &:hover
+                filter: opacity(1.2)
+
+.character-page__character--purple
+    border: 2px solid var(--secondary)
+
+    .character-page__character__inside-circle
+        background: #6746c3
+
+    .character-page__character__character-content
+        h2
+            color: var(--secondary)
