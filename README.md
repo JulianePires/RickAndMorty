@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Rickandmorty" />
+  <img align="center" width="300px" src="./src/assets/r&m.png" alt="Rickandmorty" />
 
 &#xa0;
 
